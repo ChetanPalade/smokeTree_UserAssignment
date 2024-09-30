@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './home.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { Clear_Errors, getall_user, register_user } from './redux/userAction'
-import { useAlert } from 'react-alert'
+
 import { register_user_reset } from './redux/userConstant'
 import Users from './Users'
 import Loader from './Loader'
@@ -61,7 +61,7 @@ const Home = () => {
             dispatch({ type: register_user_reset })
         }
 
-    }, [dispatch, error, success, alert,data])
+    }, [dispatch, error, success,data])
 
 
 
